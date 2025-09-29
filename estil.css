@@ -1,0 +1,45 @@
+
+:root{
+  --ppt-bg: #ffffff;
+  --ppt-fg: #0b1220;
+  --ppt-muted: #4b5563;
+  --ppt-blue: #0a5bd3;
+  --ppt-blue-dark: #0848a7;
+  --ppt-shadow: 0 8px 30px rgba(2,12,50,.08);
+  --logo-w: 220px;
+  --logo-h: 64px;
+}
+
+.reveal.ppt-theme{ font-family: 'Inter', system-ui, Segoe UI, Roboto, Helvetica, Arial, sans-serif; color: var(--ppt-fg); }
+.reveal.ppt-theme .slides{ background: var(--ppt-bg); border-radius: 20px; box-shadow: var(--ppt-shadow); padding: 1.5rem 2rem; }
+.reveal .slide-number{ background: transparent; color: var(--ppt-muted); }
+
+.reveal a{ color: var(--ppt-blue); }
+.reveal h1, .reveal h2, .reveal h3{ color: var(--ppt-blue); letter-spacing: .2px; font-weight: 800; }
+.reveal h1{ font-size: 2.4rem; } .reveal h2{ font-size: 1.8rem; } .reveal h3{ font-size: 1.4rem; }
+.reveal p, .reveal li{ color: var(--ppt-fg); font-size: 1.05rem; line-height: 1.45; }
+.reveal small, .reveal .small{ color: var(--ppt-muted); }
+
+.reveal.ppt-theme .slides:before{
+  content:""; position: absolute; left: 0; right: 0; top: -16px; height: 14px;
+  background: linear-gradient(90deg, var(--ppt-blue-dark), var(--ppt-blue));
+  border-top-left-radius: 16px; border-top-right-radius: 16px;
+}
+
+/* Portada: si no uses data-background-image, agafa cover_bg.jpg per defecte */
+/* .reveal section.cover{ background: url("assets/cover_bg.jpg") no-repeat center/cover; color: white; } */
+.reveal section.cover h1, .reveal section.cover .subtitle, .reveal section.cover .meta{ color: white; text-shadow: 0 2px 6px rgba(0,0,0,.35); }
+
+.reveal section.apartat{ border-left: 10px solid var(--ppt-blue); padding-left: 1rem; }
+.reveal section.apartat h2{ color: var(--ppt-fg); }
+.reveal section.apartat .kicker{ color: var(--ppt-blue-dark); font-weight: 700; text-transform: uppercase; letter-spacing: .6px; }
+
+.reveal .callout{ background: #f5faff; border: 1px solid #dbeafe; border-left: 6px solid var(--ppt-blue); border-radius: 12px; padding: 1rem; margin: .75rem 0; }
+.reveal .btn{ display:inline-block; padding:.65rem 1rem; border-radius:10px; border:1px solid #cfe0ff; background:linear-gradient(#fff,#f5f8ff); color:#0a3f91; font-weight:600; text-decoration:none; box-shadow:0 2px 0 rgba(10,91,211,.15); }
+.reveal .btn:hover{ filter:brightness(.98); }
+
+/* .brand-logo{ position: fixed; top: 10px; right: 14px; z-index: 1000; width: var(--logo-w); height: var(--logo-h); display:flex; align-items:center; justify-content:flex-end; pointer-events:none; }
+.brand-logo img{ max-width: 100%; max-height: 100%; object-fit: contain; filter: drop-shadow(0 2px 6px rgba(0,0,0,.12)); } */
+
+.reveal .controls{ right: calc(14px + var(--logo-w) + 10px); }
+@media (max-width: 900px){ :root{ --logo-w: 150px; --logo-h: 48px; } .reveal .controls{ right: 14px; } }

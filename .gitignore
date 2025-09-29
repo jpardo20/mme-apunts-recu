@@ -1,0 +1,14 @@
+# General
+.DS_Store
+Thumbs.db
+
+# Python
+__pycache__/
+*.pyc
+
+# Zips i derivats
+*.zip
+*.tar.gz
+
+# Node/JS
+node_modules/
