@@ -195,3 +195,12 @@ Amb aquesta base podrem afrontar problemes d’alimentació i fer diagnòstics m
 **Activitat (lliurable)**  
 <a href="activitats/electricitat/activitat.html" target="_blank">Obrir activitat: Electricitat</a>
 
+---
+
+## Documentació 
+
+[fp_smx_m01_material_paper.pdf](./assets/docs/fp_smx_m01_material_paper.pdf)
+
+[SMX-Montaje-y-mantenimiento-de-equipos-Editex.pdf](./assets/docs/SMX-Montaje-y-mantenimiento-de-equipos-Editex.pdf)
+
+[montaje-y-mantenimiento-de-equipos-2012.pdf](./assets/docs/montaje-y-mantenimiento-de-equipos-2012.pdf)
